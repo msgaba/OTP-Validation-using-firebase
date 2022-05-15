@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/dp_size_24"
+        android:layout_height="@dimen/dp_size_16"
+        android:layout_margin="@dimen/dp_size_24"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_size_32"
+        android:gravity="center"
+        android:text="@string/verification_code"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_size_32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back" />
+
+    <TextView
+        android:id="@+id/sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_size_12"
+        android:gravity="center"
+        android:text="@string/msg_text"
+        android:textColor="@color/light_theme"
+        android:textSize="@dimen/sp_size_16"
+        app:layout_constraintEnd_toEndOf="@id/header"
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+
+    <LinearLayout
+        android:id="@+id/editview_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_size_32"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_header">
+
+        <EditText
+            android:id="@+id/edit_1"
+            android:layout_width="@dimen/dp_size_32"
+            android:layout_height="@dimen/dp_size_40"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            tools:text="2">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_2"
+            android:layout_width="@dimen/dp_size_32"
+            android:layout_height="@dimen/dp_size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_size_8"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            tools:text="4" />
+
+        <EditText
+            android:id="@+id/edit_3"
+            android:layout_width="@dimen/dp_size_32"
+            android:layout_height="@dimen/dp_size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_size_8"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edit_4"
+            android:layout_width="@dimen/dp_size_32"
+            android:layout_height="@dimen/dp_size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_size_8"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edit_5"
+            android:layout_width="@dimen/dp_size_32"
+            android:layout_height="@dimen/dp_size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_size_8"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edit_6"
+            android:layout_width="@dimen/dp_size_32"
+            android:layout_height="@dimen/dp_size_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_size_8"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/change_number"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_size_70"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_size_100"
+        android:layout_marginEnd="@dimen/dp_size_16"
+        android:background="@drawable/round_corner_background"
+        android:gravity="center"
+        android:padding="@dimen/dp_size_16"
+        android:text="@string/change_number"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/guide"
+        app:layout_constraintTop_toBottomOf="@id/editview_container" />
+
+    <TextView
+        android:id="@+id/validate_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_size_70"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp_size_16"
+        android:background="@drawable/round_corner_background"
+        android:gravity="center"
+        android:padding="@dimen/dp_size_16"
+        android:text="@string/validate_otp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/change_number"
+        app:layout_constraintStart_toEndOf="@id/guide"
+        app:layout_constraintTop_toTopOf="@id/change_number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

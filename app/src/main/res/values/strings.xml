@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Firebase Authentication</string>
+    <string name="welcome">Welcome</string>
+    <string name="india_code">India(+91)</string>
+    <string name="hint_phone_number">Your Phone Number</string>
+    <string name="info_text">We will send you a One Time SMS message.\nCarrier rates may apply.</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="msg_text">Please type the verification code sent\nto +91 %s</string>
+    <string name="change_number">Change \nNumber</string>
+    <string name="validate_otp">Validate \nOTP</string>
+    <string name="log_out">Log Out</string>
+    <string name="validated_msg">Your phone number has been validated.\nThank you for logging in with us.</string>
+    <string name="phn_no_error_msg">Phone number should contain 10 digits</string>
+    <string name="sms_error_msg">Could not send SMS. Please try again.</string>
+    <string name="incorrect_otp_error_msg">Entered OTP is invalid. Please enter correct OTP</string>
+    <string name="user">User@%s</string>
+</resources>
